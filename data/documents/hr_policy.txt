@@ -1,0 +1,15 @@
+KOHLER HR Policy
+
+Employees are entitled to 24 paid leave days per year.
+
+Employees must submit leave requests through the HR system.
+
+Managers can view team-level employee information.
+
+HR Admins can access employee records and modify HR records.
+
+General Managers can view company-level HR information.
+
+Employee personal information must not be disclosed to users without appropriate permissions.
+
+Performance reviews are confidential and accessible only to authorized managers and HR personnel.

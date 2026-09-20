@@ -1,0 +1,23 @@
+KOHLER Operations Data
+
+Production Plant A currently produces industrial components.
+
+Current inventory:
+Hydraulic Pumps: 420 units
+Industrial Valves: 275 units
+Motor Assemblies: 180 units
+Control Modules: 350 units
+
+Supplier Alpha provides hydraulic pumps.
+
+Supplier Beta provides industrial valves.
+
+Operations Managers can access production and inventory information.
+
+Operations Admins can modify operational records.
+
+General Managers can view company-level operational information.
+
+Inventory changes and production modifications must be logged for auditing.
+
+Sensitive operational changes require approval from a General Manager.

@@ -1,0 +1,22 @@
+-- KOHLER synthetic enterprise data overview
+-- The Python seed script is the source of truth for this prototype.
+--
+-- Existing:
+--   employees
+--
+-- New:
+--   departments
+--   suppliers
+--   inventory_items
+--   finance_records
+--   hr_records
+--   approval_records
+--   audit_records
+--
+-- Relationships:
+--   suppliers -> inventory_items
+--   employees -> hr_records
+--   employees -> approval_records
+--   employees -> audit_records
+--
+-- All values are synthetic demonstration data.

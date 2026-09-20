@@ -1,0 +1,652 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.login-card {
+  width: 430px;
+  padding: 48px;
+  background: white;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h1 {
+  font-size: 54px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #111;
+  margin: 0 0 5px;
+}
+
+.login-card p {
+  font-size: 18px;
+  color: #555;
+  margin: 0 0 32px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  font-size: 15px;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #111;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 9px;
+  background: #111;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #333;
+}
+
+.login-info {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f5f5;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  width: 245px;
+  min-height: 100vh;
+  background: #111;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.sidebar-subtitle {
+  color: #999;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  padding: 13px 15px;
+  border-radius: 8px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: #222;
+  color: white;
+}
+
+.nav-item.active {
+  background: #333;
+  color: white;
+}
+
+.logout-button {
+  margin-top: auto;
+  padding: 13px;
+  border: 1px solid #444;
+  background: transparent;
+  color: #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #222;
+  color: white;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+  flex: 1;
+  padding: 40px 50px;
+  max-width: 1500px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.dashboard-header p {
+  color: #777;
+  margin-top: 7px;
+}
+
+.user-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.user-badge strong,
+.user-badge span {
+  display: block;
+}
+
+.user-badge span {
+  color: #777;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+/* =========================
+   ROLE BANNER
+========================= */
+
+.role-banner {
+  background: #111;
+  color: white;
+  border-radius: 15px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.small-label {
+  font-size: 11px;
+  color: #aaa;
+  letter-spacing: 1.5px;
+}
+
+.role-banner h3 {
+  margin: 7px 0;
+  font-size: 25px;
+}
+
+.role-banner p {
+  margin: 0;
+  color: #bbb;
+}
+
+.security-status {
+  border: 1px solid #555;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #4caf50;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  min-height: 230px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+  margin: 15px 0 8px;
+}
+
+.dashboard-card p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 9px;
+  background: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-button {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background: #111;
+  color: white;
+}
+
+.highlight {
+  border-top: 4px solid #555;
+}
+
+.confidential {
+  border-top: 4px solid #111;
+}
+
+
+/* =========================
+   SECURITY PANEL
+========================= */
+
+.security-panel {
+  background: white;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.security-panel h3 {
+  margin-top: 0;
+}
+
+.security-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.security-grid div {
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 8px;
+}
+
+.security-grid strong,
+.security-grid span {
+  display: block;
+}
+
+.security-grid strong {
+  font-size: 13px;
+}
+
+.security-grid span {
+  margin-top: 5px;
+  color: #777;
+  font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-content {
+    padding: 30px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .security-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .sidebar-subtitle {
+    margin-bottom: 15px;
+  }
+
+  .logout-button {
+    margin-top: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .role-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* FORCE DASHBOARD BUTTON TEXT TO BE VISIBLE */
+
+.dashboard-card .card-button {
+  display: block !important;
+  width: auto !important;
+  min-width: 145px !important;
+  height: auto !important;
+
+  color: #111 !important;
+  background: #fff !important;
+  border: 1px solid #ddd !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  text-align: center !important;
+  text-indent: 0 !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  padding: 10px 14px !important;
+  margin-top: 10px !important;
+
+  border-radius: 7px !important;
+  cursor: pointer !important;
+}
+
+.dashboard-card .card-button:hover {
+  color: #fff !important;
+  background: #111 !important;
+}
+
+/* =========================
+   AI ASSISTANT
+========================= */
+
+.assistant-page {
+  width: 100%;
+}
+
+.assistant-header {
+  background: #111;
+  color: white;
+  border-radius: 15px;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.assistant-header h2 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.assistant-header p {
+  color: #bbb;
+  margin: 0;
+}
+
+.assistant-role {
+  border: 1px solid #555;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.chat-container {
+  background: white;
+  border-radius: 15px;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  min-height: 430px;
+}
+
+.empty-chat {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.empty-icon {
+  width: 55px;
+  height: 55px;
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  font-weight: bold;
+}
+
+.empty-chat h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.empty-chat p {
+  color: #777;
+}
+
+.example-questions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.example-questions button {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #111;
+}
+
+.example-questions button:hover {
+  background: #111;
+  color: white;
+}
+
+.chat-message {
+  max-width: 75%;
+  margin-bottom: 20px;
+  padding: 15px 18px;
+  border-radius: 12px;
+}
+
+.user-message {
+  margin-left: auto;
+  background: #111;
+  color: white;
+}
+
+.ai-message {
+  margin-right: auto;
+  background: #f2f2f2;
+  color: #111;
+}
+
+.message-label {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  opacity: 0.7;
+}
+
+.message-text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.chat-input-area {
+  border-top: 1px solid #eee;
+  padding: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.chat-input-area input:focus {
+  border-color: #111;
+}
+
+.chat-input-area button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chat-input-area button:hover {
+  background: #333;
+}
+
+.login-card .login-subtitle {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+  line-height: 1.2;
+}

@@ -1,0 +1,11 @@
+KOHLER Finance Policy
+
+Finance employees can access financial reports and department-level financial data.
+
+Finance Admins can modify finance records, but sensitive modifications require approval.
+
+General Managers can view confidential company-level financial information.
+
+All sensitive financial changes must be logged for auditing.
+
+Employees without finance permissions cannot access confidential financial information.

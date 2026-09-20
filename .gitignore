@@ -1,4 +1,27 @@
+# Python
 .venv/
-.env
 __pycache__/
 *.pyc
+
+# Environment variables
+.env
+.env.*
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+data/chroma/
+
+# Frontend dependencies
+frontend/node_modules/
+
+# Frontend build output
+frontend/dist/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Logs
+*.log
